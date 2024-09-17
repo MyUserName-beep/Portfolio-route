@@ -1,0 +1,79 @@
+
+.hero {
+  background: #2C907D;
+}
+
+.hero-content {
+  width: 80%;
+  margin: auto;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wealcome-area  {
+  font-family: 'Times New Roman', serif;
+}
+.wealcome-area h2 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.wealcome-area p {
+  color: #fff;
+  font-size: 20px;
+  
+
+}
+
+.wealcome-area h2 span {
+  color: #29A737;
+}
+
+.home-image img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 50px 60px 7px;
+  transition: 0.3s;
+}
+.home-image img:hover {
+  box-shadow: none;
+}
+
+.write {
+  position: relative;
+  font-size: 3vw;
+  color: #3BB265;
+  -webkit-text-stroke: 0.3vw #6DA58E;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.write::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #3CBA29;
+  -webkit-text-stroke: 0.3vw #16BD78;
+  border-right: 2px solid #3CBA29;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%,10%,100% {
+    width: 0%;
+  }
+  70%,90% {
+    width: 100%;
+  }
+}
+
